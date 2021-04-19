@@ -19,6 +19,8 @@ jobs:
             ${{ runner.os }}-pip-
             ${{ runner.os }}-
       - name: Dependencies
-        run: pip install -r requirements-dev.txt
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements-dev.txt
       - name: Check
         run: make check
