@@ -23,5 +23,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
             ${{ runner.os }}-
+      - name: Dependencies
+        run: pip install -r requirements-dev.txt
       - name: Check
         run: make
