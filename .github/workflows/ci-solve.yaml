@@ -1,4 +1,4 @@
-name: Solve branch
+name: ci-solve 
 
 on:
   push:
